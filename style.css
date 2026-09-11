@@ -1,5 +1,5 @@
 .content {
-    margin-left: 560px;
+    margin: 0 auto;
     width: 799px;
 }
 .title {
@@ -13,21 +13,35 @@
     margin-top: 30px;
     border-radius: 50%;
     object-fit: cover;
+    flex: 1;
 }
 
 .name {
-    font-size: 24px;
-    font-weight: bold;
     margin-top: 87px;
     margin-left: 30px;
     text-align: left;
+    flex: 2;
 }
 
+.b-name {
+    font-size: 24px;
+    font-weight: bold;
+} 
+
 .contacts {
-    font-size: 18px;
-    margin-top: 87px;
+    font-size: 24px;
+    margin-top: 74px;
+    flex: 1;
     text-align: right;
-    
+}
+   
+.big-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.small-contacts {
+    font-size: 14px;
 }
 
 .about {
@@ -35,4 +49,36 @@
     margin-left: 30px;
     font-size: 14px;
     text-align: justify;
+}
+
+.photo_technologies {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.technologies_photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+th, td {
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.title-span {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: green;
+    width: 100%;
 }
