@@ -7,11 +7,63 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>Личная карточка</p>
-    <div>contact info</div>
-    <div>about</div>
-    <div>hobbies and social media</div>
-    <div>technologies</div>
-    <div>feedback</div>
+    <div class="header">
+        <img src="./content/men.png" alt="photo" class="photo">
+        <div class="name">Имя Фамилия</div>
+        <div class="contacts">Контакты</div>
+    </div>
+    <div class="about">
+        Немного обо мне: это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
+        используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил 
+        без заметных изменений пять веков...
+    </div>
+    <div class="technologies">
+        <table>
+            <tr>
+                <th>Технологии</th>
+                <th>Технологии</th>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>JavaScript</td>
+            </tr>
+        </table>
+    </div>
+    <div class="interests">
+        <span>Интересующие технологии</span>
+        <div>
+            <span>
+                <img src="./content/javascript.png" alt="javascript" class="photo_technologies">
+                <p>JavaScript</p>
+            </span>
+            <span>
+                <img src="./content/python.png" alt="python" class="photo_technologies">
+                <p>Python</p>
+            </span>
+            <span>
+                <img src="./content/vuejs.png" alt="vuejs" class="photo_technologies">
+                <p>Vue.js</p>
+            </span>
+            <span>
+                <img src="./content/postgresql.png" alt="postgresql" class="photo_technologies">
+                <p>PostgreSQL</p>
+            </span>
+            <span>
+                <img src="./content/docker.png" alt="docker" class="photo_technologies">
+                <p>Docker</p>
+            </span>
+        </div>
+    </div>
+    <div class="feedback">
+        <span>Форма обратной связи</span>
+        <div>
+            <input type="text" name="name" placeholder="Имя">
+            <input type="number" name="number" placeholder="Номер телефона">
+        </div>
+            <textarea name="question" placeholder="Ваш вопрос"></textarea>
+            <button type="submit">Отправить</button>
+    </div>
 </body>
 </html>
