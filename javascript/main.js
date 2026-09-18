@@ -3,12 +3,13 @@
 function checkNumber(number) {
 
     let sign;
-    if (number > 0) {
-        sign = "положительное";
-    } else if (number < 0) {
-        sign = "отрицательное";
+
+    if(number === 0) { sign = "ноль";
+
     } else {
-        sign = "ноль";
+        if(number > 0) {sign = "положительное";}
+        if(number < 0) {sign = "отрицательное";}
+
     }
 
     let even_odd;
