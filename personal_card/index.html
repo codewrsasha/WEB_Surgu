@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личная карточка</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="content">
-        <div class="title">
-            <img src="./content/men.png" alt="photo" class="photo">
-            <div class="name">
-                <b class="b-name">Иван Петров</b>
-                <p class="small-contacts">Frontend Developer</p>
-            </div>
-            <div class="contacts">
-                <b class="big-contacts">Контакты</b>
-                <p class="small-contacts">+7(123)456-78-90</p>
-                <p class="small-contacts">ivan.petrov@example.com</p>
-            </div>
+  <div class="wrapper">
+    <header class="header">
+      <img class="header__img" src="./images/avatar.jpg" alt="Аватар пользователя">
+      <div class="header__info">
+        <h1 class="h1">Иван Петров</h1>
+        <p>Frontend developer</p>
+      </div>
+      <div class="header__contacts">
+        <h2 class="h2">Контакты</h2>
+        <span>+79224122272</span>
+        <span>email@mail.com</span>
+      </div>
+    </header>
+    <hr>
+    <p class="about">
+      <b>Немного обо мне:</b> это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+      стандартной
+      "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+      размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+      заметных изменений пять веков...
+    </p>
+    <div class="table">
+      <div class="table__hobbies">
+        <div class="table__hobbies-title">Хобби</div>
+        <div class="table__content">
+          <ul class="table__list">
+            <li class="table__list-item">Чтение</li>
+            <li class="table__list-item">Чтение</li>
+            <li class="table__list-item">Чтение</li>
+            <li class="table__list-item">Чтение</li>
+          </ul>
         </div>
-        <div class="about">
-            <b>Немного обо мне:</b> это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
-            В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
-            используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил 
-            без заметных изменений пять веков...
+      </div>
+      <div class="table__social">
+        <div class="table__social-title">Хобби</div>
+        <div class="table__content">
+          <ol class="table__list">
+            <li class="table__list-item"><a href="http://vk.ru">VK</a></li>
+            <li class="table__list-item">Inst</li>
+            <li class="table__list-item">TG</li>
+          </ol>
         </div>
-        <div class="technologies">
-            <table>
-                <tr>
-                    <th>Технологии</th>
-                    <th>Технологии</th>
-                </tr>
-                <tr>
-                    <th>JavaScript</th>
-                    <th>JavaScript</th>
-                </tr>
-            </table>
-        </div>
-        <div class="interests">
-            <span class="title-span">Интересующие технологии</span>
-            <div class="technologies-photos">
-                <span>
-                    <img src="./content/javascript.png" alt="javascript" class="photo_technologies">
-                    <p>JavaScript</p>
-                </span>
-                <span>
-                    <img src="./content/python.png" alt="python" class="photo_technologies">
-                    <p>Python</p>
-                </span>
-                <span>
-                    <img src="./content/vuejs.png" alt="vuejs" class="photo_technologies">
-                    <p>Vue.js</p>
-                </span>
-                <span>
-                    <img src="./content/postgresql.png" alt="postgresql" class="photo_technologies">
-                    <p>PostgreSQL</p>
-                </span>
-                <span>
-                    <img src="./content/docker.png" alt="docker" class="photo_technologies">
-                    <p>Docker</p>
-                </span>
-            </div>
-        </div>
-        <div class="feedback">
-            <span class="title-span">Форма обратной связи</span>
-            <div>
-                <input type="text" name="name" placeholder="Имя">
-                <input type="number" name="number" placeholder="Номер телефона">
-            </div>
-                <textarea name="question" placeholder="Ваш вопрос"></textarea>
-                <button type="submit">Отправить</button>
-        </div>
+      </div>
+
     </div>
+    <div class="title">Интересующие технологии</div>
+    <div class="technologies">
+      <div class="technologies__item">
+        <img src="./images/js.jpg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="technologies__item">
+        <img src="./images/js.jpg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="technologies__item">
+        <img src="./images/js.jpg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="technologies__item">
+        <img src="./images/js.jpg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+    </div>
+    <div class="title">Форма обратной связи</div>
+    <form class="form">
+      <input class="form__input" type="text" placeholder="Ваше имя">
+      <input class="form__input" type="number" placeholder="Телефон">
+      <textarea rows="10" class="form__textarea" placeholder="Ваш вопрос"></textarea>
+      <button class="form__button">Отправить</button>
+    </form>
+  </div>
+
 </body>
+
 </html>
