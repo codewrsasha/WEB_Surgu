@@ -13,7 +13,7 @@ async function response(req, res){
   let htmlFile = "";
 
   if (url === '/' && method === 'GET') {
-    htmlFile = '/main.html';
+    htmlFile = './main.html';
   } else if (url === '/second' && method === 'GET') {
     htmlFile = './second.html';
   } else {
@@ -26,6 +26,7 @@ async function response(req, res){
   fs.readFile(htmlFile, (err, data) => {
     if (err) {
       console.error(err);
+      res.statusCode = 500;
       res.end("Error reading file");
       return;
     } else {
