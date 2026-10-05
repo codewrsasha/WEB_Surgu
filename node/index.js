@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const hostname = '127.0.0.1';
 const port = 3000;
 
-async function response(req, res){
+function response(req, res){
   const url = req.url;
   const method = req.method;
   console.log(`url: ${url}`);
